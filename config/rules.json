@@ -1,0 +1,12 @@
+{
+  "states": ["q0", "q1", "q2", "q3", "q4", "q_attack"],
+  "initial_state": "q0",
+  "accept_states": ["q_attack"],
+  "transitions": [
+    {"from": "q0", "token": "QUOTE", "to": "q1"},
+    {"from": "q1", "token": "LOGIC_OP", "to": "q2"},
+    {"from": "q2", "token": "LITERAL", "to": "q3"},
+    {"from": "q3", "token": "EQUALS", "to": "q4"},
+    {"from": "q4", "token": "LITERAL", "to": "q_attack"}
+  ]
+}
