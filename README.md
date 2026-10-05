@@ -30,22 +30,6 @@ SQL Injection tespitinde kullanılan durum zinciri:
 
 ---
 
-## 📁 Proje Dosya Yapısı
-
-automaton-waf/
-├── config/
-│   └── rules.json          # DFA durumları ve geçiş kuralları
-├── core/
-│   ├── __init__.py
-│   ├── dfa_engine.py       # Durum makinesi yürütme motoru
-│   └── tokenizer.py        # Girdi ayrıştırıcı (Lexer)
-├── main.py                 # FastAPI reverse proxy ve WAF middleware katmanı
-├── requirements.txt        # Gerekli Python paketleri
-├── .gitignore              # Git dışlama kuralları
-└── README.md               # Proje dokümantasyonu
-
----
-
 ## 🚀 Kurulum ve Çalıştırma
 
 1. Depoyu Klonlayın:
